@@ -1,11 +1,14 @@
 let item = 0;
 
 function addItem(){
-  function newItem(){item ++;}
-item.addEventListener("click", newItem());
+item ++;
 }
  
-addItem();
+function onClick(){
+  addEventListener("click", addItem())
+}
+
+onClick();
 
 function restart (){
     if (item > 0){
